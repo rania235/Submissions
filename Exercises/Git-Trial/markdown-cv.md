@@ -11,6 +11,7 @@ Education
 2015-2016
 i went from high school shakib irslan 
 bac 2 (life science)
+codi-tech accademy for the web developer
 
 Experience
 ----------
