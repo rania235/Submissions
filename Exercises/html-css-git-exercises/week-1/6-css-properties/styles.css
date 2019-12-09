@@ -1,1 +1,9 @@
 /* Add your CSS code below */
+a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+time {
+  font-size: 0.9rem;
+}
