@@ -1,35 +1,38 @@
 .ls {
-  color: red;
-  background-color: grey;
+  color: black;
+  background-color: pink;
 }
 .gs {
   color: black;
-  background-color: #944d4d;
+  background-color: pink;
 }
 .bac1 {
-  color: grey;
-  background-color: honeydew;
+  color: black;
+  background-color: pink;
 }
 .bac2 {
-  color: red;
-  background-color: black;
+  color: black;
+  background-color: pink;
 }
 
 .room {
-  color: blue;
-  background-color: coral;
+  color: black;
+  background-color: pink;
 }
 .angel {
-  color: red;
-  background-color: black;
+  color: black;
+  background-color: pink;
 }
 h1 {
-  color: rgb(36, 36, 168);
-  background-color: black;
+  color: black;
+  background-color: pink;
 }
 img {
   width: 200px;
   margin: 50px;
   height: 200px;
   padding: 10px;
+}
+.nav {
+  display: block;
 }
