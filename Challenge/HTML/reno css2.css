@@ -1,0 +1,35 @@
+.ls {
+  color: red;
+  background-color: grey;
+}
+.gs {
+  color: black;
+  background-color: #944d4d;
+}
+.bac1 {
+  color: grey;
+  background-color: honeydew;
+}
+.bac2 {
+  color: red;
+  background-color: black;
+}
+
+.room {
+  color: blue;
+  background-color: coral;
+}
+.angel {
+  color: red;
+  background-color: black;
+}
+h1 {
+  color: rgb(36, 36, 168);
+  background-color: black;
+}
+img {
+  width: 200px;
+  margin: 50px;
+  height: 200px;
+  padding: 10px;
+}
