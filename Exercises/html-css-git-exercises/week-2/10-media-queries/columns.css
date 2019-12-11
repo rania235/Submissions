@@ -1,3 +1,9 @@
 /* Add your own CSS code below */
-css colomns {
+.countries {
+  columns: 2;
+  min-width: 768px;
+}
+.countries {
+  columns: 3;
+  min-width: 1200px;
 }
