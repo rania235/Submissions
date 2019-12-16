@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Step 5</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <form>
-            <label for="first_number">first number : </label><input type="text" id="first_number" name="first_number"/><br/>
-            <label for="second_number">second number : </label><input type="text" id="second_number" name="second_number"/><br/>
-            <button  id="validate" name ="validate">validate</button>
-        </form>
-    </body>
+  <head>
+    <title>Step 5</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form>
+      <label for="first_number">first number : </label
+      ><input type="text" id="first_number" name="first_number" /><br />
+      <label for="second_number">second number : </label
+      ><input type="text" id="second_number" name="second_number" /><br />
+      <button id="validate" name="validate">validate</button>
+    </form>
+    <script>
+      let num1 = prompt("enter you number", "number1");
+      let num2 = prompt("enter you number", "number2");
+      let res = num1 * num2;
+
+      alert("the result is : " + res);
+    </script>
+  </body>
 </html>
