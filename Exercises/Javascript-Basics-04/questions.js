@@ -1,101 +1,112 @@
-
-const stringSize = (text) => {
-    return text.length();
-}
-const replaceCharacterE = (text) => {
-    return text.replaceCharacterE();
-}
+const stringSize = text => {
+  return text.length;
+};
+const replaceCharacterE = text => {
+  return text.replace("e", " ");
+};
 const concatString = (text1, text2) => {
-    return text.length();
-}
-const showChar5 = (text) => {
-    return text.showChar5();
-}
-const showChar9 = (text) => {
-    return text.showChar9();
-}
-const toCapitals = (text) => {
-    return text.toCapitals();
-}
-const toLowerCase = (text) => {
-    return text.toLowerCase();
-}
-const removeSpaces = (text) => {
-    return text.removeSpaces();
-}
-const IsString = (text) => {
-    return text.IsString();
-}
+  return text1.concat(text2);
+};
+const showChar5 = text => {
+  return text.charAt(4);
+};
+const showChar9 = text => {
+  return text.substr(0, 9);
+};
+const toCapitals = text => {
+  return text.toUpperCase();
+};
+const toLowerCase = text => {
+  return text.toLowerCase();
+};
+const removeSpaces = text => {
+  return text.trim();
+};
+const IsString = text => {
+  return typeof text === "string";
+};
 
-const getExtension = (text) => {
-    return text.getExtension();
-}
-const countSpaces = (text) => {
-    return text.countSpaces();
-}
-const InverseString = (text) => {
-    return text.InverseString();
-}
+const getExtension = text => {
+  return text.split(".")[1];
+};
+const countSpaces = text => {
+  return text.split(" ").length - 1;
+};
+const InverseString = text => {
+  return text
+    .split("")
+    .reverse()
+    .join("");
+};
 
 const power = (x, y) => {
-    return text.power(x,y);
-}
-const absoluteValue = (num) => {
-    return text.absoluteValue(num);
-}
-const absoluteValueArray = (array) => {
-    return text.absoluteValueArray(array);
-}
-const circleSurface = (radius) => {
-    return text.circleSurface(radius);
-}
+  return Math.pow(x, y);
+};
+const absoluteValue = num => {
+  return Math.abs(num);
+};
+const absoluteValueArray = array => {
+  for (var i = 0; i < array.length; i++) {
+    array[i] = Math.abs(array[i]);
+  }
+  return array;
+};
+const circleSurface = radius => {
+  return Math.round(Math.PI * radius * radius);
+};
 const hypothenuse = (ab, ac) => {
-    return text.hypothenuse(ab, ac);
-}
+  return Math.hypot(ab, ac);
+};
 const BMI = (weight, height) => {
-    return text.BMI(weught , height);
-}
+  var BMI = weight / (height * height);
+  return Math.round(BMI * Math.pow(10, 2)) / Math.pow(10, 2);
+};
 
 const createLanguagesArray = () => {
-    return text.createLanguagesArray();
-}
+  return ["Html", "CSS", "Java", "PHP"];
+};
 
 const createNumbersArray = () => {
-    return text.createNumbersArray();
-}
+  return [0, 1, 2, 3, 4, 5];
+};
 
-const replaceElement = (languages) => {
-    return text.replaceElement(languagesl);
-}
+const replaceElement = languages => {
+  languages[2] = "Javascript";
+  return languages;
+};
 
-const addElement = (languages) => {
-    return text.addElement(languages);
-}
+const addElement = languages => {
+  languages.push("Ruby", "Python");
+  return languages;
+};
 
-const addNumberElement = (numbers) => {
-    return text.addNumberElement(numbers);
-}
+const addNumberElement = numbers => {
+  numbers.unshift(-2, -1);
+  return numbers;
+};
 
-const removeFirst = (languages) => {
-    return text.removeFirst(languages);
-}
+const removeFirst = languages => {
+  languages.shift();
+  return languages;
+};
 
-const removeLast = (languages) => {
-    return text.removeLast(languages)
-}
+const removeLast = languages => {
+  languages.pop();
+  return languages;
+};
 
-const convertStrToArr = (social_arr) => {
-    return text.convertStrToArr(social_arr);
-}
+const convertStrToArr = social_arr => {
+  return social_arr.split(",");
+};
 
-const convertArrToStr = (languages) => {
-    return text.convertArrToStr(languages);
-}
+const convertArrToStr = languages => {
+  return languages.join();
+};
 
-const sortArr = (social_arr) => {
-    return text.sortArr(social_arr);
-}
+const sortArr = social_arr => {
+  return social_arr.sort();
+};
 
-const invertArr = (social_arr) => {
-    return text.invertArr(social_arr);
-}
+const invertArr = social_arr => {
+  return social_arr.reverse();
+};
