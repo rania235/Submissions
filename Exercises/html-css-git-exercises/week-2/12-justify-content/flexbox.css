@@ -20,5 +20,10 @@
   flex-direction: column;
   padding-top: 200px;
 }
+.countries--fouryh {
+  display: flex;
+  flex-direction: row;
+  content: normal;
+}
 
 /* Add your own CSS code below */
