@@ -1,10 +1,10 @@
 <html>
 <script>
-let x = prompt("enter your name");
-let y = prompt("enter your name");
-alert("hello " + x);
-alert("hello " + y);
-
-
+var name = prompt("your name please ", "name");
+if (name == "Alice" || name == "Bob"){
+    alert("Hello " +name);
+}
+else{
+    alert("Hello Stranger ");
+}
 </script>
-</html>
