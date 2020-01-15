@@ -28,4 +28,12 @@ class CurrentWeather extends Component {
   }
 }
 
+// CurrentWeather: [
+//   { temperature: "8°", time: "3:00" , img:"src={cloudy} alt=(weather-logo)"},
+//   { name: "Luke", content: "Hi", time: "8:10" },
+//   { name: "Samar", content: "Hello", time: "8:00" },
+//   { name: "Luke", content: "Hi", time: "8:10" },
+//   { name: "Samar", content: "Hello", time: "8:00" }
+// ],
+
 export default CurrentWeather;

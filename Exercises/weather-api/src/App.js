@@ -17,7 +17,15 @@ class App extends Component {
       <div className="app">
         <Search />
         <CurrentWeather />
-        <WeatherLater />
+        <div className="forecast">
+          <WeatherLater />
+          <WeatherLater />
+          <WeatherLater />
+          <WeatherLater />
+          <WeatherLater />
+          <WeatherLater />
+          <WeatherLater />
+        </div>
 
         <main className="appmain"></main>
       </div>
