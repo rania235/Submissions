@@ -19,7 +19,8 @@ class CurrentWeather extends Component {
             </p>
             <p>
               {" "}
-              <b>Pressure </b>1008.48
+              <b>Pressure </b>
+              {this.props.pres}
             </p>
           </div>
         </div>
