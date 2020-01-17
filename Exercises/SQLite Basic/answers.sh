@@ -38,7 +38,7 @@ INSERT INTO graduates (Name,Age ,Gender,Points,Graduation)
 VALUES 
    ("layal",18,"F","350","08/09/2018");
 
-   
+
 
    DELETE from students where Name ='Layal'
 
@@ -47,6 +47,18 @@ VALUES
 
 
 
+select e.Name, c.Name, Date from companies c join employees e on e.Company = c.Name
+
+SELECT employees.Name
+from employees
+INNER JOIN companies on companies.Name = employees.Company
+where Date<2000;
+
+
+
+select companies.Name 
+from companies  join employees on Company = companies.Name
+where employees.Role = 'Graphic Designer'
 
 
 
