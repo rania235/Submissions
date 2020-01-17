@@ -61,6 +61,22 @@ from companies  join employees on Company = companies.Name
 where employees.Role = 'Graphic Designer'
 
 
+SELECT name FROM students
+WHERE Points= (select max(Points) from students)
+
+
+select avg (Points) from students
+
+select count (Name) from students
+where Points = 500
+
+
+select  (Name) from students
+where Name like '%s%'
+
+
+select Name from students order by Points desc
+
 
 
 
