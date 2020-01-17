@@ -1,0 +1,11 @@
+body {
+  background-image: url("back.jpg");
+}
+
+h1 {
+  color: rgb(17, 8, 26);
+}
+.box {
+  text-align: center;
+  border-color: plum;
+}

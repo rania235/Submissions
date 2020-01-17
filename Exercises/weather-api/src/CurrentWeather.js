@@ -15,12 +15,12 @@ class CurrentWeather extends Component {
           </div>
           <div className="pressure">
             <p>
-              <b> Humidity </b>78%
+              <b> Humidity </b>
+              {this.props.hum}%
             </p>
             <p>
               {" "}
-              <b>Pressure </b>
-              {this.props.pres}
+              <b>Pressure </b>1008.48
             </p>
           </div>
         </div>
@@ -29,12 +29,6 @@ class CurrentWeather extends Component {
   }
 }
 
-// CurrentWeather: [
-//   { temperature: "8°", time: "3:00" , img:"src={cloudy} alt=(weather-logo)"},
-//   { name: "Luke", content: "Hi", time: "8:10" },
-//   { name: "Samar", content: "Hello", time: "8:00" },
-//   { name: "Luke", content: "Hi", time: "8:10" },
-//   { name: "Samar", content: "Hello", time: "8:00" }
-// ],
+
 
 export default CurrentWeather;

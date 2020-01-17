@@ -1,0 +1,49 @@
+.title {
+    color:palevioletred;
+    text-align: center;
+}
+.text {
+    color:black;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-family: sans-serif;
+    font-style: italic;
+    border: 2px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.img {
+    text-align: center;
+}
+.img1 {
+text-align: right;
+}
+
+
+body {
+    background-image: url("i.jpeg"); 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:palevioletred;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
