@@ -24,6 +24,25 @@ set Points = '190'
 WHERE students.Name= "Alex"
 
 
+create table graduates(
+	ID Integer  Not Null Primary key, Auto incerement,
+	Name Text Not Null Unique,
+	Age Integer
+	Gender Text
+	Points Integer
+	Graduation Text 
+);
+
+
+INSERT INTO graduates (Name,Age ,Gender,Points,Graduation)
+VALUES 
+   ("layal",18,"F","350","08/09/2018");
+
+   
+
+   DELETE from students where Name ='Layal'
+
+
 
 
 
