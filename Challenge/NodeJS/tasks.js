@@ -63,6 +63,11 @@ function hello() {
   console.log("hello!");
 }
 
+/**
+ * Exits the application
+ * it displays on console all commands that are available in the app .
+ * @returns {void}
+ */
 function help() {
   console.log(
     "hello : hello \n quit or exit : it quits the program \n unknownCommand: a command is undefined\n   "
