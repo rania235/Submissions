@@ -36,6 +36,8 @@ function onDataReceived(text) {
     quit();
   } else if (text === "hello\n") {
     hello();
+  } else if (text === "help\n") {
+    help();
   } else {
     unknownCommand(text);
   }
@@ -59,6 +61,12 @@ function unknownCommand(c) {
  */
 function hello() {
   console.log("hello!");
+}
+
+function help() {
+  console.log(
+    "hello : hello \n quit or exit : it quits the program \n unknownCommand: a command is undefined\n   "
+  );
 }
 
 /**
