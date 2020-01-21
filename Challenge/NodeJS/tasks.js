@@ -32,17 +32,22 @@ function startApp(name) {
  * @returns {void}
  */
 function onDataReceived(text) {
-  if (text === "quit\n" || text === "exit\n") {
+  text = text.trim();
+  const textArray = text.split(" ");
+  if (text === "quit" || text === "exit") {
     quit();
-  } else if (text === "hello\n") {
-    hello();
-  } else if (text === "help\n") {
+  } else if (textArray[0] === "hello") {
+    hello(textArray);
+  } else if (text === "help") {
     help();
+  } else if (text === "list") {
+    readFromDatabase();
+    list();
+  } else if (textArray[0] === "add") {
   } else {
     unknownCommand(text);
   }
 }
-
 /**
  * prints "unknown command"
  * This function is supposed to run when all other commands have failed
@@ -59,15 +64,10 @@ function unknownCommand(c) {
  *
  * @returns {void}
  */
-function hello() {
-  console.log("hello!");
+function hello(name) {
+  console.log(name + " !");
 }
 
-/**
- * Exits the application
- * it displays on console all commands that are available in the app .
- * @returns {void}
- */
 function help() {
   console.log(
     "hello : hello \n quit or exit : it quits the program \n unknownCommand: a command is undefined\n   "
