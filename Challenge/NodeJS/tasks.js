@@ -59,7 +59,7 @@ function list() {
 }
 
 function add(text) {
-  text.shift();
+  text.shift(); //
   listoftasks.push(text.join(" "));
 }
 
