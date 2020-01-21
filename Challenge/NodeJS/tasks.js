@@ -41,13 +41,28 @@ function onDataReceived(text) {
   } else if (text === "help") {
     help();
   } else if (text === "list") {
-    readFromDatabase();
+    //readFromDatabase();
     list();
   } else if (textArray[0] === "add") {
+    if (textArray[2] != "") add(textArray);
+    else console.log("error");
   } else {
     unknownCommand(text);
   }
 }
+var listoftasks = ["tomato", "banana", "potato", "apple"];
+
+function list() {
+  for (let i = 0; i < listoftasks.length; i++) {
+    console.log(`${i + 1}: ${listoftasks[i]}`);
+  }
+}
+
+function add(text) {
+  text.shift();
+  listoftasks.push(text.join(" "));
+}
+
 /**
  * prints "unknown command"
  * This function is supposed to run when all other commands have failed
