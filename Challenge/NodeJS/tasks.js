@@ -46,6 +46,8 @@ function onDataReceived(text) {
   } else if (textArray[0] === "add") {
     if (textArray[2] != "") add(textArray);
     else console.log("error");
+  } else if (textArray[0] === "remove") {
+    remove(textArray[1]);
   } else {
     unknownCommand(text);
   }
@@ -61,6 +63,16 @@ function list() {
 function add(text) {
   text.shift(); //
   listoftasks.push(text.join(" "));
+}
+
+function remove(x) {
+  if (parseInt(x) <= 2) {
+    listoftasks.splice(parseInt(x) - 1, 1);
+    list();
+  } else if (x == undefined) {
+    listoftasks.splice(-1, 1);
+    list();
+  } else console.log("number doesnt exist");
 }
 
 /**
