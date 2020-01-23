@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const movies = [
+  { title: "Jaws", year: 1975, rating: 8 },
+  { title: "Avatar", year: 2009, rating: 7.8 },
+  { title: "Brazil", year: 1985, rating: 8 },
+  { title: "الإرهاب والكباب‎", year: 1992, rating: 6.2 }
+];
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
@@ -50,4 +56,34 @@ app.get("/search", (req, res) => {
   }
 });
 
+app.get("movies/search", (req, res) => {
+  const search = req.query.s;
+  res.send({
+    status: 200,
+    message: "ok"
+  });
+});
+app.get("movies/read", (req, res) => {
+  const search = req.query.s;
+  res.send({
+    status: 200,
+    message: "ok"
+  });
+});
+
+app.get("movies/update", (req, res) => {
+  const search = req.query.s;
+  res.send({
+    status: 200,
+    data: "movies"
+  });
+});
+
+app.get("movies/delete", (req, res) => {
+  const search = req.query.s;
+  res.send({
+    status: 200,
+    message: "ok"
+  });
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
