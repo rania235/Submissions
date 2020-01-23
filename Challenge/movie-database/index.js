@@ -86,25 +86,35 @@ app.get("/movies/delete", (req, res) => {
     message: "ok"
   });
 });
-app.get("/movies/read/:var", (req, res) => {
-  const params = req.params.var;
-  if (params == "by-date") {
-    movies.sort(function(a, b) {
-      return a.year - b.year;
-    });
-  } else if (params == "by-rating") {
-    movies.sort(function(a, b) {
-      return a.rating - b.rating;
-    });
-  } else if (params == "by-title") {
-    movies.sort(function(a, b) {
-      return a.title - b.title;
-    });
+
+app.get("/movies/read/:sortby", (req, res) => {
+  const sortBy = req.params.sortby;
+  let arrayToReturn = [];
+  switch (sortBy) {
+    case "by-date":
+      arrayToReturn = movies.sort((a, b) => {
+        return a.year - b.year;
+      });
+      break;
+    case "by-rating":
+      arrayToReturn = movies.sort((a, b) => {
+        return b.rating - a.rating;
+      });
+      break;
+    case "by-title":
+      arrayToReturn = movies.sort((a, b) => {
+        return a.title > b.title;
+      });
+      break;
+    default:
+      res.json({
+        status: 500,
+        error: true,
+        message: "you have to provide a valid search"
+      });
+      break;
   }
-  res.send({
-    status: 200,
-    data: movies
-  });
+  res.json({ status: 200, data: arrayToReturn });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
