@@ -56,34 +56,55 @@ app.get("/search", (req, res) => {
   }
 });
 
-app.get("movies/search", (req, res) => {
+app.get("/movies/search", (req, res) => {
   const search = req.query.s;
   res.send({
     status: 200,
     message: "ok"
   });
 });
-app.get("movies/read", (req, res) => {
+app.get("/movies/read", (req, res) => {
   const search = req.query.s;
   res.send({
     status: 200,
-    message: "ok"
+    message: movies
   });
 });
 
-app.get("movies/update", (req, res) => {
+app.get("/movies/update", (req, res) => {
   const search = req.query.s;
   res.send({
     status: 200,
-    data: "movies"
+    data: movies
   });
 });
 
-app.get("movies/delete", (req, res) => {
+app.get("/movies/delete", (req, res) => {
   const search = req.query.s;
   res.send({
     status: 200,
     message: "ok"
   });
 });
+app.get("/movies/read/:var", (req, res) => {
+  const params = req.params.var;
+  if (params == "by-date") {
+    movies.sort(function(a, b) {
+      return a.year - b.year;
+    });
+  } else if (params == "by-rating") {
+    movies.sort(function(a, b) {
+      return a.rating - b.rating;
+    });
+  } else if (params == "by-title") {
+    movies.sort(function(a, b) {
+      return a.title - b.title;
+    });
+  }
+  res.send({
+    status: 200,
+    data: movies
+  });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
