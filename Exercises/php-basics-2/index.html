@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To do app</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="to-do">
+    <div class="to-do__container">
+        <form class="to-do__form">
+            <div class="to-do__form_title form_group">
+                <label for="task_title">Task title</label>
+                <input name="task_title" id="task_title">
+            </div>
+            <div class="to-do__form__description form_group">
+                <label for="task_description">Task title</label>
+                <textarea name="task_description" id="task_description"></textarea>
+            </div>
+            <div class="to-do__form__submit form_group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        
+        <div class="to-do__list">
+            <div class="to-do__list__item">
+                <h2>Do the php logic lab</h2>
+                <p>I should do it before the end of the holidays</p>
+                <form class="to-do__list__item__form__check">
+                    <label for="task_status_1">done</label>
+                    <input type="checkbox" name="task_status" id="task_status_1" value="task_id"
+                           onChange="this.form.submit()">
+                </form>
+                <form class="to-do__list__item__form__delete">
+                    <input type="text" name="item_id" value="2">
+                    <button>Delete</button>
+                </form>
+            </div>
+            <div class="to-do__list__item">
+                <h2>Do the php logic lab</h2>
+                <p>I should do it before the end of the holidays</p>
+                <form class="to-do__list__item__form__check">
+                    <label for="task_status_2">done</label>
+                    <input type="checkbox" name="task_status" id="task_status_2" value="task_id"
+                           onChange="this.form.submit()">
+                </form>
+                <form class="to-do__list__item__form__delete">
+                    <input type="text" name="item_id" value="2">
+                    <button>Delete</button>
+                </form>
+            </div>
+            <div class="to-do__list__item">
+                <h2>Do the php logic lab</h2>
+                <p>I should do it before the end of the holidays</p>
+                <form class="to-do__list__item__form__check">
+                    <label for="task_status_3">done</label>
+                    <input type="checkbox" name="task_status" id="task_status_3" value="task_id"
+                           onChange="this.form.submit()">
+                </form>
+                <form class="to-do__list__item__form__delete">
+                    <input type="text" name="item_id" value="3">
+                    <button>Delete</button>
+                </form>
+            </div>
+            <div class="to-do__list__item">
+                <h2>Do the php logic lab</h2>
+                <p>I should do it before the end of the holidays</p>
+                <form class="do__list__item__form__check">
+                    <label for="task_status_4">done</label>
+                    <input type="checkbox" name="task_status" id="task_status_4" value="task_id"
+                           onChange="this.form.submit()">
+                </form>
+                <form class="to-do__list__item__form__delete">
+                    <input type="text" name="item_id" value="4">
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

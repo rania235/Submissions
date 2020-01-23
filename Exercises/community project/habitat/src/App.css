@@ -1,0 +1,53 @@
+.title {
+  color: yellow;
+  text-align: center;
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  padding-right: 20px;
+}
+.text {
+  color: white;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-style: italic;
+  border: 2px solid;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img {
+  text-align: center;
+  border: none;
+}
+
+body {
+  background-image: url("./black.jpg");
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: yellow;
+  height: 60px;
+  width: 75.8pc;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+li a:hover {
+  background-color: white;
+}

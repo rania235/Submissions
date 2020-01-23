@@ -100,7 +100,7 @@ function help() {
     "available commands: \n hello @argument (says hello @argument! or hello!) \n quit or exit (exits the app) \n add @argument(adds @argument to the list) \n remove (removes last element of list or give number to remove element) \n list (lists the todos in the list) \n check@argument: it checks the task in todolist \n uncheck: it uncheck the task in the to dolist depending on the number of the task in the list ,incase doesnt exit error"
   );
 }
-
+/*
 /**
  * Exits the application
  *

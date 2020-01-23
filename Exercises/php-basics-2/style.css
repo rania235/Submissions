@@ -1,0 +1,24 @@
+html, body {
+    width:      100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #9edbff;
+    display: grid;
+    align-items: center;
+}
+
+.to-do__container {
+    max-width: 800px;
+    margin: auto;
+}
+.to-do__form {
+    border: 1px solid red;
+    padding: 25px;
+}
+.to-do__form .form_group {
+    padding: 10px;
+}
+.to-do__form .form_group > *{
+    display: block;
+    width: 100%;
+}
