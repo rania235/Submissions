@@ -174,4 +174,18 @@ app.get("/movies/add"),
     }
   };
 
+app.get("/movies/get/id/:id", (req, res) => {
+  if (req.params.id) {
+    if (req.params.id < movies.length && req.params.id >= 0) {
+      res.json({ status: 200, data: movies[req.params.id] });
+    } else {
+      res.json({
+        status: 404,
+        error: true,
+        message: `the movie with id ${req.params.id} does not exist`
+      });
+    }
+  }
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
