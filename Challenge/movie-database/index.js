@@ -174,7 +174,7 @@ app.get("/movies/add"),
     }
   };
 
-app.get("/movies/get/id/:id", (req, res) => {
+app.get("/movies/delete/id/:id", (req, res) => {
   if (req.params.id) {
     if (req.params.id < movies.length && req.params.id >= 0) {
       res.json({ status: 200, data: movies[req.params.id] });
@@ -186,6 +186,24 @@ app.get("/movies/get/id/:id", (req, res) => {
       });
     }
   }
+});
+app.get("/movies/update/:id", (req, res) => {
+  const ID = req.params.id;
+  const title = req.query.title;
+  const rating = req.query.rating;
+  const year = req.query.year;
+  console.log("movies", movies);
+
+  const object_updated = findById(movies, ID);
+
+  if (ID >= 0 && ID < movies.length) {
+    (object_updated.title = title),
+      (object_updated.rating = rating),
+      (object_updated.year = year);
+  }
+  console.log("object_updated", object_updated);
+
+  res.json({ status: 200, message: "updated", data: movies });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
