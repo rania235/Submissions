@@ -205,5 +205,7 @@ app.get("/movies/update/:id", (req, res) => {
 
   res.json({ status: 200, message: "updated", data: movies });
 });
-
+app.listen(PORT, () => {
+  console.log(`Server running at: http://localhost:${PORT}/`);
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
