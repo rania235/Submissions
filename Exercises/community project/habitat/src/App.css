@@ -13,13 +13,12 @@
   font-size: 25px;
   font-family: sans-serif;
   font-style: italic;
-  border: 2px solid;
   margin-left: 20px;
   margin-right: 20px;
 }
 .img {
   text-align: center;
-  border: none;
+  height: 100%;
 }
 
 body {

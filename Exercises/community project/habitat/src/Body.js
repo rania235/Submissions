@@ -17,7 +17,7 @@ function Body(props) {
       </p>
       <div class="img">
         {" "}
-        <img src="yellow.jpeg" alt="humanity" />
+        <img src="fab.jpg" />
       </div>
     </div>
   );
